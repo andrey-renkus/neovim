@@ -4,6 +4,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
     sources = {
         null_ls.builtins.formatting.eslint_d.with { filetypes = {
+            "python",
             "typescript",
             "javascript",
             "typescriptreact",
@@ -15,6 +16,7 @@ null_ls.setup({
         null_ls.builtins.diagnostics.ltrs,
         null_ls.builtins.formatting.rustfmt,
         null_ls.builtins.formatting.prettierd.with { filetypes = {
+        "py",
         "css",
         "scss",
         "less",
