@@ -32,7 +32,7 @@ local bubbles_theme = {
 
 require("lualine").setup({
 	options = {
-		theme = vscode,
+		theme = gruvbox,
 		component_separators = "|",
 		section_separators = { left = "", right = "" },
 	},
